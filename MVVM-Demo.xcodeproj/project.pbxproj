@@ -3,21 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1E9B97205C10509DCC5B3FA4 /* Pods_MVVM_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349CD792F37BBD62CE9A882A /* Pods_MVVM_DemoTests.framework */; };
 		316B10E2E9C454216891AE41 /* Pods_MVVM_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFACBB79F6FB02DD0CD27E /* Pods_MVVM_Demo.framework */; };
 		BD8ACBE485999A8CCED7CE38 /* Pods_MVVM_Demo_MVVM_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50A233A360637FAFC764A5F /* Pods_MVVM_Demo_MVVM_DemoUITests.framework */; };
+		E220A7FF26989C43009B4F60 /* BranchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220A7FE26989C43009B4F60 /* BranchesViewController.swift */; };
+		E220A80126989C68009B4F60 /* Branches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E220A80026989C68009B4F60 /* Branches.storyboard */; };
+		E220A80526989CAD009B4F60 /* BranchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220A80326989CAD009B4F60 /* BranchTableViewCell.swift */; };
+		E220A80626989CAD009B4F60 /* BranchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E220A80426989CAD009B4F60 /* BranchTableViewCell.xib */; };
+		E220A80826989CFB009B4F60 /* BranchesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220A80726989CFB009B4F60 /* BranchesModel.swift */; };
+		E220A80A26989D23009B4F60 /* BranchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220A80926989D23009B4F60 /* BranchesViewModel.swift */; };
 		E2D21B8C269662DE00E1B06D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21B8B269662DE00E1B06D /* AppDelegate.swift */; };
 		E2D21B8E269662DE00E1B06D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21B8D269662DE00E1B06D /* SceneDelegate.swift */; };
 		E2D21B90269662DF00E1B06D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21B8F269662DF00E1B06D /* ViewController.swift */; };
-		E2D21B93269662DF00E1B06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D21B91269662DF00E1B06D /* Main.storyboard */; };
 		E2D21B95269662E400E1B06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D21B94269662E400E1B06D /* Assets.xcassets */; };
 		E2D21B98269662E400E1B06D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D21B96269662E400E1B06D /* LaunchScreen.storyboard */; };
 		E2D21BA3269662E600E1B06D /* MVVM_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BA2269662E600E1B06D /* MVVM_DemoTests.swift */; };
 		E2D21BAE269662E600E1B06D /* MVVM_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BAD269662E600E1B06D /* MVVM_DemoUITests.swift */; };
+		E2D21BC02696647300E1B06D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D21BBF2696647300E1B06D /* Login.storyboard */; };
+		E2D21BC22696648700E1B06D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BC12696648700E1B06D /* LoginViewController.swift */; };
+		E2D21BC42696664C00E1B06D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BC32696664C00E1B06D /* LoginViewModel.swift */; };
+		E2D21BC7269668B600E1B06D /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BC6269668B600E1B06D /* APIServices.swift */; };
+		E2D21BC92696697000E1B06D /* BaseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BC82696697000E1B06D /* BaseErrorModel.swift */; };
+		E2D21BCB2696698200E1B06D /* LoginSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BCA2696698200E1B06D /* LoginSuccessModel.swift */; };
+		E2D21BCD2696703F00E1B06D /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BCC2696703F00E1B06D /* UIViewController + Extension.swift */; };
+		E2D21BCF2696705C00E1B06D /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D21BCE2696705C00E1B06D /* CustomAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +58,16 @@
 		3D58735130F7BF8E6CCB0D4B /* Pods-MVVM-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Demo.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Demo/Pods-MVVM-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		9BBF4C9DB00012A9D27549BB /* Pods-MVVM-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-DemoTests/Pods-MVVM-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		C50A233A360637FAFC764A5F /* Pods_MVVM_Demo_MVVM_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Demo_MVVM_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E220A7FE26989C43009B4F60 /* BranchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesViewController.swift; sourceTree = "<group>"; };
+		E220A80026989C68009B4F60 /* Branches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Branches.storyboard; sourceTree = "<group>"; };
+		E220A80326989CAD009B4F60 /* BranchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTableViewCell.swift; sourceTree = "<group>"; };
+		E220A80426989CAD009B4F60 /* BranchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BranchTableViewCell.xib; sourceTree = "<group>"; };
+		E220A80726989CFB009B4F60 /* BranchesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesModel.swift; sourceTree = "<group>"; };
+		E220A80926989D23009B4F60 /* BranchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesViewModel.swift; sourceTree = "<group>"; };
 		E2D21B88269662DE00E1B06D /* MVVM-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D21B8B269662DE00E1B06D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D21B8D269662DE00E1B06D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2D21B8F269662DF00E1B06D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E2D21B92269662DF00E1B06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2D21B94269662E400E1B06D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D21B97269662E400E1B06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D21B99269662E400E1B06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +77,14 @@
 		E2D21BA9269662E600E1B06D /* MVVM-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D21BAD269662E600E1B06D /* MVVM_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_DemoUITests.swift; sourceTree = "<group>"; };
 		E2D21BAF269662E600E1B06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D21BBF2696647300E1B06D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		E2D21BC12696648700E1B06D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E2D21BC32696664C00E1B06D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E2D21BC6269668B600E1B06D /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		E2D21BC82696697000E1B06D /* BaseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorModel.swift; sourceTree = "<group>"; };
+		E2D21BCA2696698200E1B06D /* LoginSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessModel.swift; sourceTree = "<group>"; };
+		E2D21BCC2696703F00E1B06D /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		E2D21BCE2696705C00E1B06D /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		E48C257EBE57E9DED37B2F35 /* Pods-MVVM-Demo-MVVM-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Demo-MVVM-DemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Demo-MVVM-DemoUITests/Pods-MVVM-Demo-MVVM-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC7AE671EEA2EA70668CA72 /* Pods-MVVM-Demo-MVVM-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Demo-MVVM-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-Demo-MVVM-DemoUITests/Pods-MVVM-Demo-MVVM-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,8 +137,52 @@
 				12317C562323D40BB1136C06 /* Pods-MVVM-DemoTests.debug.xcconfig */,
 				9BBF4C9DB00012A9D27549BB /* Pods-MVVM-DemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E220A7FA26989BEF009B4F60 /* Branches */ = {
+			isa = PBXGroup;
+			children = (
+				E220A7FB26989BF7009B4F60 /* View */,
+				E220A7FC26989BFF009B4F60 /* ViewModel */,
+				E220A7FD26989C07009B4F60 /* Model */,
+			);
+			path = Branches;
+			sourceTree = "<group>";
+		};
+		E220A7FB26989BF7009B4F60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E220A80226989C98009B4F60 /* Cell */,
+				E220A7FE26989C43009B4F60 /* BranchesViewController.swift */,
+				E220A80026989C68009B4F60 /* Branches.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E220A7FC26989BFF009B4F60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E220A80926989D23009B4F60 /* BranchesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E220A7FD26989C07009B4F60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E220A80726989CFB009B4F60 /* BranchesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E220A80226989C98009B4F60 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E220A80326989CAD009B4F60 /* BranchTableViewCell.swift */,
+				E220A80426989CAD009B4F60 /* BranchTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E2D21B7F269662DE00E1B06D = {
@@ -140,10 +210,14 @@
 		E2D21B8A269662DE00E1B06D /* MVVM-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E2D21BC5269668A900E1B06D /* APIService */,
+				E220A7FA26989BEF009B4F60 /* Branches */,
+				E2D21BBB2696643000E1B06D /* Login */,
 				E2D21B8B269662DE00E1B06D /* AppDelegate.swift */,
 				E2D21B8D269662DE00E1B06D /* SceneDelegate.swift */,
 				E2D21B8F269662DF00E1B06D /* ViewController.swift */,
-				E2D21B91269662DF00E1B06D /* Main.storyboard */,
+				E2D21BCC2696703F00E1B06D /* UIViewController + Extension.swift */,
+				E2D21BCE2696705C00E1B06D /* CustomAlert.swift */,
 				E2D21B94269662E400E1B06D /* Assets.xcassets */,
 				E2D21B96269662E400E1B06D /* LaunchScreen.storyboard */,
 				E2D21B99269662E400E1B06D /* Info.plist */,
@@ -167,6 +241,50 @@
 				E2D21BAF269662E600E1B06D /* Info.plist */,
 			);
 			path = "MVVM-DemoUITests";
+			sourceTree = "<group>";
+		};
+		E2D21BBB2696643000E1B06D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E2D21BBC2696643A00E1B06D /* View */,
+				E2D21BBD2696644400E1B06D /* ViewModel */,
+				E2D21BBE2696644E00E1B06D /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E2D21BBC2696643A00E1B06D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2D21BC12696648700E1B06D /* LoginViewController.swift */,
+				E2D21BBF2696647300E1B06D /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2D21BBD2696644400E1B06D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2D21BC32696664C00E1B06D /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2D21BBE2696644E00E1B06D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2D21BC82696697000E1B06D /* BaseErrorModel.swift */,
+				E2D21BCA2696698200E1B06D /* LoginSuccessModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2D21BC5269668A900E1B06D /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				E2D21BC6269668B600E1B06D /* APIServices.swift */,
+			);
+			path = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,9 +395,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D21BC02696647300E1B06D /* Login.storyboard in Resources */,
 				E2D21B98269662E400E1B06D /* LaunchScreen.storyboard in Resources */,
+				E220A80126989C68009B4F60 /* Branches.storyboard in Resources */,
 				E2D21B95269662E400E1B06D /* Assets.xcassets in Resources */,
-				E2D21B93269662DF00E1B06D /* Main.storyboard in Resources */,
+				E220A80626989CAD009B4F60 /* BranchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +527,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D21BC22696648700E1B06D /* LoginViewController.swift in Sources */,
+				E2D21BCD2696703F00E1B06D /* UIViewController + Extension.swift in Sources */,
 				E2D21B90269662DF00E1B06D /* ViewController.swift in Sources */,
+				E2D21BC7269668B600E1B06D /* APIServices.swift in Sources */,
 				E2D21B8C269662DE00E1B06D /* AppDelegate.swift in Sources */,
+				E220A80526989CAD009B4F60 /* BranchTableViewCell.swift in Sources */,
+				E220A7FF26989C43009B4F60 /* BranchesViewController.swift in Sources */,
+				E2D21BC42696664C00E1B06D /* LoginViewModel.swift in Sources */,
+				E220A80826989CFB009B4F60 /* BranchesModel.swift in Sources */,
+				E2D21BCB2696698200E1B06D /* LoginSuccessModel.swift in Sources */,
+				E220A80A26989D23009B4F60 /* BranchesViewModel.swift in Sources */,
 				E2D21B8E269662DE00E1B06D /* SceneDelegate.swift in Sources */,
+				E2D21BC92696697000E1B06D /* BaseErrorModel.swift in Sources */,
+				E2D21BCF2696705C00E1B06D /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,14 +576,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E2D21B91269662DF00E1B06D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2D21B92269662DF00E1B06D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E2D21B96269662E400E1B06D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -596,7 +719,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ramadan.MVVM-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -616,7 +739,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ramadan.MVVM-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

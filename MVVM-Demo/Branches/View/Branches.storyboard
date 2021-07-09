@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wAO-gh-Wwz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Branches View Controller-->
+        <scene sceneID="VcB-xQ-n9l">
+            <objects>
+                <viewController storyboardIdentifier="BranchesViewController" id="wAO-gh-Wwz" customClass="BranchesViewController" customModule="MVVM_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Rq-bG-siU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWc-fp-Qxp" userLabel="No Branches View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Branches..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PI5-9I-FVh">
+                                        <rect key="frame" x="151" y="398.5" width="112" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PI5-9I-FVh" firstAttribute="centerY" secondItem="cWc-fp-Qxp" secondAttribute="centerY" id="LEh-et-mZC"/>
+                                    <constraint firstItem="PI5-9I-FVh" firstAttribute="centerX" secondItem="cWc-fp-Qxp" secondAttribute="centerX" id="XjY-FS-YQE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e51-qB-iPn" userLabel="Branches Container View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AYQ-9i-zSR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AYQ-9i-zSR" secondAttribute="trailing" id="UFB-q8-CMq"/>
+                                    <constraint firstAttribute="bottom" secondItem="AYQ-9i-zSR" secondAttribute="bottom" id="gsS-IG-zhv"/>
+                                    <constraint firstItem="AYQ-9i-zSR" firstAttribute="leading" secondItem="e51-qB-iPn" secondAttribute="leading" id="mOa-V5-hSB"/>
+                                    <constraint firstItem="AYQ-9i-zSR" firstAttribute="top" secondItem="e51-qB-iPn" secondAttribute="top" id="zvl-2W-21u"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K1I-BR-RIn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K1I-BR-RIn" firstAttribute="bottom" secondItem="cWc-fp-Qxp" secondAttribute="bottom" id="2fI-uh-VPy"/>
+                            <constraint firstItem="K1I-BR-RIn" firstAttribute="trailing" secondItem="cWc-fp-Qxp" secondAttribute="trailing" id="4fm-eY-8rm"/>
+                            <constraint firstItem="e51-qB-iPn" firstAttribute="bottom" secondItem="cWc-fp-Qxp" secondAttribute="bottom" id="Hgo-lr-Cwq"/>
+                            <constraint firstItem="e51-qB-iPn" firstAttribute="leading" secondItem="cWc-fp-Qxp" secondAttribute="leading" id="HpO-4z-1xf"/>
+                            <constraint firstItem="e51-qB-iPn" firstAttribute="top" secondItem="cWc-fp-Qxp" secondAttribute="top" id="YRR-RW-Icx"/>
+                            <constraint firstItem="cWc-fp-Qxp" firstAttribute="leading" secondItem="K1I-BR-RIn" secondAttribute="leading" id="jeW-LF-12T"/>
+                            <constraint firstItem="e51-qB-iPn" firstAttribute="trailing" secondItem="cWc-fp-Qxp" secondAttribute="trailing" id="nZ2-zf-HfV"/>
+                            <constraint firstItem="cWc-fp-Qxp" firstAttribute="top" secondItem="K1I-BR-RIn" secondAttribute="top" id="qo1-Wu-twF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="branchesContainerView" destination="e51-qB-iPn" id="Ibm-yf-ERt"/>
+                        <outlet property="branchesTableView" destination="AYQ-9i-zSR" id="UTG-tq-Ski"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OgH-op-Zlp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
